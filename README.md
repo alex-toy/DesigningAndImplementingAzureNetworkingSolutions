@@ -9,3 +9,17 @@ The various objectives of this project are :
 - Design and Implement Routing : create User Defined routes for your subnets. Work with the various routing services - Azure Load Balancer , Azure Application Gateway, Azure Front Door, Azure Traffic Manager. Azure Firewall service. Working with basic networking filtering with the use of Network Security Groups. Monitor networks.
 
 - Design and Implement Private Access to Azure Services : connect to Azure services. Use of Service Endpoints and Private endpoints. Secure connections against services such as Azure Web Apps and Azure Kubernetes.
+
+
+## Designing and Implementing Core Networking Infrastructure
+
+When you put a VM inside a VN, you need to make sure they belong to the same Azure Region
+
+### Communication between VM in different networks
+
+- create demovm inside *demo-network/default*. Install IIS on it. Add firewall rule for HTTP port 80
+<img src="/pictures/demovm.png" title="create VM"  width="900">
+
+- create demovm inside *demo-network/subnetA*
+<img src="/pictures/demovm.png" title="create VM"  width="900">
+
