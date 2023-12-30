@@ -51,14 +51,24 @@ The purpose is to be able to browse IIS in *stagingvm* from *testvm* via its pri
 ### Routing a Domain to a VM
 
 - create *stagingvm*. Add HTTP 80 as inbound port. Install IIS.
-<img src="/pictures/domain.png" title="routing a domain"  width="1000">
 
 - inside *C:\inetpub\wwwroot* create a Default.html file containing web content.
 <img src="/pictures/domain1.png" title="routing a domain"  width="1000">
 
 ### Local DNS
 
-#### Setting up the domain
+#### Setting up the Domain
 
-- create *dns-server*. Add HTTP 80 as inbound port. Install IIS.
+- create *dns-server* inside *new-network/subnetA*. Install *Active Directory Domain Services*.
 <img src="/pictures/localdns.png" title="local dns"  width="1000">
+
+- promote server to a domain controller. Leave defaults
+<img src="/pictures/localdns1.png" title="local dns"  width="1000">
+<img src="/pictures/localdns10.png" title="local dns"  width="1000">
+<img src="/pictures/localdns11.png" title="local dns"  width="1000">
+<img src="/pictures/localdns12.png" title="local dns"  width="1000">
+
+#### Setting up the Web Server
+
+- create *web-server* inside *new-network/subnetB*. Install *IIS*.
+<img src="/pictures/webserver.png" title="web server"  width="1000">
