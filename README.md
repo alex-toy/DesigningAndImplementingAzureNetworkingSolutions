@@ -81,7 +81,7 @@ The purpose is to be able to browse IIS in *stagingvm* from *testvm* via its pri
 - in *new-network*, use custom DNS Server. User *dns-server* private IP
 <img src="/pictures/dnsserver.png" title="dns server"  width="1000">
 
-- in *dns-server*, go to tools
+- in *dns-server*, go to tools / DNS
 <img src="/pictures/dnsserver1.png" title="dns server"  width="1000">
 
 - in *dns-server*, create a new host. Use private IP of *web-server*
@@ -92,6 +92,6 @@ The purpose is to be able to browse IIS in *stagingvm* from *testvm* via its pri
 
 #### Azure Private DNS 
 
-- in *new-network*, use custom DNS Server. User *dns-server* private IP
-<img src="/pictures/dnsserver.png" title="dns server"  width="1000">
+- in *new-network*, set default DNS Server
+<img src="/pictures/privatedns.png" title="private dns"  width="1000">
 
