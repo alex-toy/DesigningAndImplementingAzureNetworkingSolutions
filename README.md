@@ -90,8 +90,17 @@ The purpose is to be able to browse IIS in *stagingvm* from *testvm* via its pri
 - in *dns-server*, use the FQDN *web-server.alexei.privatedomain* to connect to the site
 <img src="/pictures/dnsserver5.png" title="dns server"  width="1000">
 
+- you can also create another hostname and still be able to query the web server
+<img src="/pictures/dnsserver6.png" title="dns server"  width="1000">
+<img src="/pictures/dnsserver7.png" title="dns server"  width="1000">
+
 #### Azure Private DNS 
 
-- in *new-network*, set default DNS Server
+- in *new-network*, set custom again
+<img src="/pictures/privatedns0.png" title="private dns"  width="1000">
+
+- in *dns-server*, install IIS and create a default.html file in *wwwroot*
 <img src="/pictures/privatedns.png" title="private dns"  width="1000">
 
+- the same url http://dns-server.alexei.privatedomain/default.html cannot be reached from the *web-server*
+<img src="/pictures/privatedns1.png" title="private dns"  width="1000">
